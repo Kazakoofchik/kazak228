@@ -1,0 +1,173 @@
+@font-face {
+    font-family: Ruslan; /* Гарнитура шрифта */
+    src: url('Arimo-VariableFont_wght.ttf'); /* Путь к файлу со шрифтом */
+   }
+@font-face {
+   font-family: YouNig; 
+   src: url('PressStart2P-Regular.ttf'); 
+   }
+@font-face {
+   font-family: '228'; 
+   src: url('YanoneKaffeesatz-VariableFont_wght.ttf'); 
+   }
+@font-face {
+   font-family: '229'; 
+   src: url('RobotoSlab-VariableFont_wght.ttf'); 
+   }
+@font-face {
+   font-family: '2293'; 
+   src: url('Roboto-Light.ttf'); 
+   }
+body{
+	padding: 0;
+	margin: 0;
+	display: grid;
+	grid-template-rows: 120px 1fr 80px;
+	height: 100vh;
+	background: url('1.jpg') no-repeat; 
+	background-size: cover;
+	background-attachment:  fixed;
+}
+header{
+	padding: 0px;
+	background: #161b38;
+	display:  grid;
+	grid-template-columns: 250px 1fr;
+	align-items: center;
+	border-top: 5px solid #5A89B9;
+	border-bottom: 5px solid #5A89B9;
+	overflow: hidden;	
+	
+}
+
+.logo{
+	font-size: 2.1rem;
+	color:  #98FB98;
+	text-align: center;
+	font-family: 'YouNig';
+	border: 6px solid red ;
+    padding: 0 10px;
+    padding-top: 5px;
+    margin-left: 20px;
+    padding-bottom: 2px;	
+    
+}
+nav{
+	justify-self: end;
+	position: fixed;
+}
+
+ul{	
+	display:  flex;
+	flex-direction: row;
+	align-items: flex-end;
+	gap: 20px;
+	list-style-type: none;
+	flex-wrap: wrap;
+	font-family: '228';
+	letter-spacing: 0.3rem;
+}
+
+li{
+	color:  #98FB98;
+	font-size: 1.1rem;
+}
+
+ul a{
+	text-decoration: none;
+	color: rgba(255,255,255,0.5);
+	padding: 10px;
+	background: #223A5E;
+	border-radius: 10px;
+	text-align: center;
+	border-top: 3px solid rgba(255, 0, 0,1.5);
+	border-bottom: 3px solid rgba(255, 0, 0,1.5);
+	box-shadow: none;
+}
+ul a:last-child{
+	margin-right: 20px;
+}
+ul a:hover{
+	background: #555;
+	color: rgba(255,255,255,1);
+	border-top: 2.5px solid rgba(255,255,255,1);
+	border-bottom: 2.5px solid rgba(255,255,255,1);
+	box-shadow: 0 0 10px rgba(255,255,255,0.5);
+}
+main{
+	background: rgba(255,255,255,0.7);
+	padding: 40px;
+	box-shadow:inset 0 0 80px rgba(0,0,0,1.5);
+	font-family: '229';
+	color: #2E4553;
+  	vertical-align: 100,100,100;
+  	/*text-align: 100,100,100;*/
+  	text-align: center;
+  	display: grid;
+  	grid-template-columns: 1fr 1fr;
+  	grid-gap: 50px;
+  	max-width: 1000px;
+  	margin:  0 auto;
+}
+
+
+p{
+	font-size: 1.5rem;
+	background: rgba(255,255,255,0.9);
+	border-radius: 10px;
+	padding:  10px;
+	text-align: left;
+	line-height: 1.5em;
+	letter-spacing: 0.09rem
+}
+
+
+footer{
+	padding: 20px;
+	background: #161b38;
+	color:  #fff;
+	display:  grid;
+	justify-content: start;
+	align-content: center;
+	gap: 20px;
+	border-top: 5px solid #5A89B9;
+	grid-template-columns: repeat(3, 1fr);
+}
+footer span:first-child{
+	margin-left: 20px;
+}
+hr {
+    border: 300px solid white; 
+    width: 900px;
+   }
+.title{
+	font-size: 3rem;
+	font-weight: bold;
+	font-family: 'Ruslan';
+	color: #223A5E;
+	grid-column: 1 / span 2;
+	text-shadow: 3px 0 1px #00A591, 
+	0 1px 1px #000, 
+	-1px 0 1px #000, 
+	0 -1px 1px #000;
+	letter-spacing: 0.08em;
+}
+
+.img_news{
+
+	width: calc(100% - 10px);
+	margin:  10px;
+	box-sizing: border-box;
+}
+
+
+.width_2columns{
+	grid-column: 1 / span 2;
+	text-align: right
+}
+
+span{
+	font-family: '2293';
+	color: #98FB98;
+}
+
